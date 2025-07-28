@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dusun Krajan 2</title>
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+      .hero-bg {
+        background: linear-gradient(
+            rgba(34, 197, 94, 0.8),
+            rgba(16, 185, 129, 0.8)
+          ),
+          url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800"><rect fill="%23059669" width="1200" height="800"/><circle fill="%23065f46" cx="200" cy="200" r="100"/><circle fill="%23047857" cx="800" cy="300" r="80"/><circle fill="%23064e3b" cx="1000" cy="600" r="120"/></svg>');
+        background-size: cover;
+        background-position: center;
+      }
+
+      .card-hover {
+        transition: all 0.3s ease;
+      }
+
+      .card-hover:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1);
+      }
+
+      .gradient-text {
+        background: linear-gradient(135deg, #059669, #16a085);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+      }
+
+      .animate-bounce-slow {
+        animation: bounce 2s infinite;
+      }
+    </style>
+  </head>
+
+  <body class="bg-gray-50">
+    <!-- Navbar -->
+    <nav class="bg-white shadow-lg sticky top-0 z-50">
+      <div class="container mx-auto px-4">
+        <div class="flex justify-between items-center py-4">
+          <div class="flex items-center space-x-3">
+            <i class="fas fa-leaf text-3xl text-green-600"></i>
+            <h1 class="text-2xl font-bold text-gray-800">Dusun Krajan 2</h1>
+          </div>
+          <div class="hidden md:flex space-x-6">
+            <a
+              href="#beranda"
+              class="text-gray-700 hover:text-green-600 transition duration-300"
+              >Beranda</a
+            >
+            <a
+              href="#tentang"
+              class="text-gray-700 hover:text-green-600 transition duration-300"
+              >Tentang Dusun</a
+            >
+            <a
+              href="#program"
+              class="text-gray-700 hover:text-green-600 transition duration-300"
+              >Produk Besek</a
+            >
+          </div>
+          <div class="md:hidden">
+            <button
+              id="mobile-menu-btn"
+              class="text-gray-700 hover:text-green-600 focus:outline-none"
+            >
+              <i class="fas fa-bars text-xl"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Mobile Menu -->
+      <div
+        id="mobile-menu"
+        class="md:hidden bg-white border-t border-gray-200 hidden"
+      >
+        <div class="px-4 py-2 space-y-2">
+          <a
+            href="#beranda"
+            class="block py-2 text-gray-700 hover:text-green-600 transition duration-300"
+            >Beranda</a
+          >
+          <a
+            href="#tentang"
+            class="block py-2 text-gray-700 hover:text-green-600 transition duration-300"
+            >Tentang Dusun</a
+          >
+          <a
+            href="#program"
+            class="block py-2 text-gray-700 hover:text-green-600 transition duration-300"
+            >Produk Besek</a
+          >
+        </div>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="beranda" class="hero-bg text-white py-20">
+      <div class="container mx-auto px-4 text-center">
+        <div class="max-w-4xl mx-auto">
+          <h2 class="text-5xl font-bold mb-6 animate-bounce-slow">
+            Selamat Datang di Dusun Krajan 2, Desa Cukilan
+          </h2>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="tentang" class="py-16">
+      <div class="container mx-auto px-4">
+        <div class="text-center mb-12">
+          <h2 class="text-4xl font-bold gradient-text mb-4">Tentang Dusun</h2>
+          <p class="text-gray-600 text-lg max-w-4xl mx-auto leading-relaxed">
+            Dusun Krajan 2 merupakan salah satu wilayah yang berada di bawah
+            naungan Desa Cukilan, Kecamatan Suruh, Kabupaten Semarang. Dusun ini
+            dikenal aktif dalam berbagai kegiatan sosial dan budaya yang menjadi
+            bagian penting dalam kehidupan warganya. Salah satu acara terbesar
+            yang rutin diselenggarakan adalah tradisi Saparan, sebuah perayaan
+            yang menjadi momen berkumpulnya warga serta simbol syukur dan
+            kebersamaan. Selain itu, warga Dusun Krajan 2 juga rutin
+            melaksanakan kerja bakti dan memperingati Hari Kemerdekaan Indonesia
+            setiap tanggal 17 Agustus dengan semangat gotong royong yang tinggi.
+            Yang menjadi ciri khas dan kebanggaan dari dusun ini adalah produksi
+            besek pindang wadah anyaman bambu yang digunakan untuk membungkus
+            makanan khas pindang yang masih dibuat secara tradisional dan telah
+            menjadi bagian dari identitas serta potensi ekonomi lokal masyarakat
+            Dusun Krajan 2.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Program Section -->
+    <section id="program" class="py-16 bg-gray-100">
+      <div class="container mx-auto px-4">
+        <div class="text-center mb-12">
+          <h2 class="text-4xl font-bold gradient-text mb-4">Produk Besek</h2>
+          <p class="text-gray-600 text-lg max-w-4xl mx-auto leading-relaxed">
+            Besek pindang adalah salah satu hasil kerajinan tangan dari warga
+            Dusun Krajan 2 yang masih dibuat secara tradisional. Besek ini
+            terbuat dari anyaman bambu dan biasanya digunakan untuk membungkus
+            makanan khas pindang. Besek ini juga menjadi ciri khas dusun karena
+            cara pembuatannya yang masih dilakukan secara manual oleh warga.
+            Kerajinan ini sudah ada sejak lama dan menjadi salah satu keahlian
+            turun-temurun di masyarakat. Saat ini, besek pindang dari Dusun
+            Krajan 2 mulai dikenal oleh orang-orang dari luar, meskipun
+            pemasarannya masih terbatas lewat pesanan langsung. Dengan keunikan
+            dan kualitas yang baik, besek pindang punya potensi besar untuk
+            terus dikembangkan sebagai usaha lokal yang mendukung perekonomian
+            warga.
+          </p>
+        </div>
+
+        <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+          <!-- Foto 1 -->
+          <div
+           class="bg-white p-4 rounded-2xl shadow-lg overflow-hidden"
+            >
+              <img src="src/img/besek 1.jpg" alt="Dokumentasi 1"
+                        class="w-full object-cover rounded-xl mb-4" style="height: 400px;">
+              </img>
+          </div>
+
+          <!-- Foto 2 -->
+          <div
+            class="bg-white p-4 rounded-2xl shadow-lg overflow-hidden card-hover"
+            >
+              <img src="src/img/besek2.jpg" alt="Dokumentasi 2"
+                        class="w-full object-cover rounded-xl mb-4" style="height: 400px;">
+              </img>
+          </div>
+
+          <!-- Foto 3 -->
+          <div
+            class="bg-white p-4 rounded-2xl shadow-lg overflow-hidden card-hover"
+            >
+              <img src="src/img/besek4.jpg" alt="Dokumentasi 3"
+                        class="w-full object-cover rounded-xl mb-4" style="height: 400px;">
+              </img>
+          </div>
+
+          <!-- Foto 4 -->
+          <div
+            class="bg-white p-4 rounded-2xl shadow-lg overflow-hidden card-hover"
+            >
+              <img src="src/img/besek5.jpg" alt="Dokumentasi 4"
+                        class="w-full object-cover rounded-xl mb-4" style="height: 400px;">
+              </img>
+          </div>
+        </div>
+
+        <div class="text-center mb-12 mt-12">
+          <div class="max-w-5xl mx-auto">
+            <h3 class="text-2xl font-bold text-gray-800 mb-6">
+              Proses Pembuatan
+            </h3>
+            <p class="text-gray-600 text-lg leading-relaxed">
+              Dalam proses pembuatan besek pindang, warga Dusun Krajan 2
+              menggunakan teknik anyaman silang-silang, yaitu satu bilah bambu
+              diletakkan di atas, lalu yang berikutnya di bawah, dan seterusnya.
+              Teknik ini membuat hasil anyaman menjadi rapi, simetris, dan kuat.
+              Saat menganyam, tekanan diberikan secara perlahan dan merata agar
+              bentuk besek tetap stabil dan tidak mudah rusak.
+            </p>
+
+            <h3 class="text-2xl font-bold text-gray-800 mb-6 mt-8">
+              Varian Ukuran
+            </h3>
+            <div class="grid md:grid-cols-3 gap-6 mt-6">
+              <div class="bg-white p-6 rounded-xl shadow-md">
+                <h4 class="font-bold text-green-600 text-xl mb-2">
+                  Ukuran Kecil
+                </h4>
+                <p class="text-gray-600">15 × 5 × 3 cm</p>
+                <p class="text-sm text-gray-500 mt-2">
+                  Kapasitas: 3 ekor pindang
+                </p>
+              </div>
+              <div class="bg-white p-6 rounded-xl shadow-md">
+                <h4 class="font-bold text-green-600 text-xl mb-2">
+                  Ukuran Sedang
+                </h4>
+                <p class="text-gray-600">16 × 6 × 3 cm</p>
+                <p class="text-sm text-gray-500 mt-2">
+                  Kapasitas: 4-5 ekor pindang
+                </p>
+              </div>
+              <div class="bg-white p-6 rounded-xl shadow-md">
+                <h4 class="font-bold text-green-600 text-xl mb-2">
+                  Ukuran Besar
+                </h4>
+                <p class="text-gray-600">21 × 9 × 3 cm</p>
+                <p class="text-sm text-gray-500 mt-2">
+                  Kapasitas: 6-8 ekor pindang
+                </p>
+              </div>
+            </div>
+
+            <p class="text-gray-600 text-lg leading-relaxed mt-8">
+              Agar besek lebih kuat dan tahan lama, bagian pinggirnya diperkuat
+              menggunakan tali rotan, bambu pipih, atau kawat stainless tipis.
+              Untuk menjaga kualitas, besek disimpan secara vertikal maksimal 10
+              tumpuk di tempat yang kering dan bebas tikus. Saat akan dikemas,
+              tumpukan besek tersebut diikat rapi dengan tali rafia, lalu
+              dimasukkan ke dalam karton tebal atau plastik besar agar tetap
+              bersih dan tidak rusak selama distribusi.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-8">
+      <div class="container mx-auto px-4">
+        <div class="grid md:grid-cols-3 gap-8">
+          <div>
+            <div class="flex items-center space-x-3 mb-4">
+              <i class="fas fa-leaf text-2xl text-green-400"></i>
+              <h3 class="text-xl font-bold">Dusun Krajan 2</h3>
+            </div>
+            <p class="text-gray-400">
+              Desa Cukilan, Kecamatan Suruh, Kabupaten Semarang, Jawa Tengah
+            </p>
+          </div>
+          <div>
+            <h4 class="text-lg font-semibold mb-4">Navigasi</h4>
+            <div class="space-y-2">
+              <a
+                href="#beranda"
+                class="block text-gray-400 hover:text-green-400 transition duration-300"
+                >Beranda</a
+              >
+              <a
+                href="#tentang"
+                class="block text-gray-400 hover:text-green-400 transition duration-300"
+                >Tentang Dusun</a
+              >
+              <a
+                href="#program"
+                class="block text-gray-400 hover:text-green-400 transition duration-300"
+                >Produk Besek</a
+              >
+            </div>
+          </div>
+          <div>
+            <h4 class="text-lg font-semibold mb-4">Lokasi</h4>
+            <div class="space-y-2 text-gray-400">
+              <p>
+                <i class="fas fa-map-marker-alt mr-2"></i>Dusun Krajan 2, Desa
+                Cukilan
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div
+        class="border-t border-gray-700 mt-8 pt-8 pb-8 text-center text-gray-400"
+      >
+        <p>
+            Dusun Krajan 2, Desa Cukilan. Program KKNT Universitas
+          Diponegoro 2025
+        </p>
+      </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <a
+      href="#beranda"
+      id="back-to-top"
+      class="fixed bottom-4 right-4 bg-green-600 text-white p-3 rounded-full shadow-lg hover:bg-green-700 transition duration-300 opacity-0 pointer-events-none"
+    >
+      <i class="fas fa-arrow-up"></i>
+    </a>
+
+    <script>
+      // Mobile menu toggle
+      const mobileMenuBtn = document.getElementById("mobile-menu-btn");
+      const mobileMenu = document.getElementById("mobile-menu");
+
+      if (mobileMenuBtn && mobileMenu) {
+        mobileMenuBtn.addEventListener("click", () => {
+          mobileMenu.classList.toggle("hidden");
+        });
+      }
+
+      // Smooth scrolling for navigation links
+      document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
+        anchor.addEventListener("click", function (e) {
+          e.preventDefault();
+          const target = document.querySelector(this.getAttribute("href"));
+          if (target) {
+            target.scrollIntoView({
+              behavior: "smooth",
+              block: "start",
+            });
+            // Close mobile menu if open
+            if (mobileMenu) {
+              mobileMenu.classList.add("hidden");
+            }
+          }
+        });
+      });
+
+      // Back to top button visibility
+      const backToTopBtn = document.getElementById("back-to-top");
+      if (backToTopBtn) {
+        window.addEventListener("scroll", () => {
+          if (window.scrollY > 300) {
+            backToTopBtn.classList.remove("opacity-0", "pointer-events-none");
+            backToTopBtn.classList.add("opacity-100");
+          } else {
+            backToTopBtn.classList.add("opacity-0", "pointer-events-none");
+            backToTopBtn.classList.remove("opacity-100");
+          }
+        });
+      }
+
+      // Form submission handler
+      const form = document.querySelector("form");
+      if (form) {
+        form.addEventListener("submit", function (e) {
+          e.preventDefault();
+          alert(
+            "Terima kasih! Pesan Anda telah dikirim. Kami akan segera menghubungi Anda."
+          );
+          this.reset();
+        });
+      }
+    </script>
+  </body>
+</html>
